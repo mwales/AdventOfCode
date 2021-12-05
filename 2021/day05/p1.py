@@ -19,13 +19,10 @@ def main(argv):
 	for eachLine in filedata:
 		arrowIndex = eachLine.index("->")
 		eachLine = eachLine[:arrowIndex] + "," + eachLine[arrowIndex + 2:]
-		eprint(eachLine)
 		(x1,y1,x2,y2) = [int(x) for x in eachLine.split(",")]
-		
-		eprint("{} {} {} {}".format(x1, y1, x2, y2))
 		pointData.append( (x1, y1, x2, y2) )
 		
-	print (pointData)
+	#eprint (pointData)
 	
 	mapData = {}
 	
@@ -49,11 +46,11 @@ def main(argv):
 				val += 1
 				mapData[(x1,y)] = val
 				
-	print(mapData)
+	#print(mapData)
 	
 	p1 = 0
 	for loc in mapData:
-		print("{} = {}".format(loc, mapData[loc]))
+		#eprint("Location {} = {}".format(loc, mapData[loc]))
 		if mapData[loc] >= 2:
 			p1 += 1
 			
