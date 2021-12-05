@@ -10,34 +10,24 @@ class BingoCard:
 		
 		self.cardSize = len(cardNumberStrings)
 		
+		self.cardNumbers = {}
+		self.markedSquares = set()
 		
-		
-		self.cardNumbers = []
-		self.markedSquares = []
-		
-		for row in range(0, self.cardSize):
-			markedRowData = []			
-			for col in range(0, self.cardSize):
-				markedRowData.append('.')
-			self.markedSquares.append(markedRowData)
-			
-			self.cardNumbers.append([int(x) for x in cardNumberStrings[row].split()])
+		for row in range(0, self.cardSize):			
+			rowVals = [int(x) for x in cardNumberStrings[row].split()]
+			for col in range(0, self.cardSize):			
+				self.cardNumbers[(col,row)] = rowVals[col]
 		
 	def getValue(self, x, y):
-		return self.cardNumbers[y][x]
+		return self.cardNumbers[(x,y)]
 		
 	def isMarked(self, x, y):
-		if (self.markedSquares[y][x] == '.'):
-			return False
-		else:
-			return True
+		return (x,y) in self.markedSquares
 	
 	def markCard(self, value):
-		for x in range(0, self.cardSize):
-			for y in range(0, self.cardSize):
-				if (self.getValue(x, y) == value):
-					self.markedSquares[y][x] = 'X'
-					return
+		for loc in self.cardNumbers:
+			if (self.cardNumbers[loc] == value):
+				self.markedSquares.add(loc)
 		
 	def printCard(self):
 		for y in range(0, self.cardSize):
@@ -50,24 +40,27 @@ class BingoCard:
 			eprint(rowText)
 	
 	def isWinner(self):
-		eprint("isWinner on : {}".format(self.markedSquares))
-		winningData = 'X' * self.cardSize
+		#eprint("isWinner on : {}".format(self.markedSquares))
+		winningData = 'X' * self.cardSize		
 		
-		
-		eprint("Winning Data: {}".format(winningData))
+		#eprint("Winning Data: {}".format(winningData))
 		
 		# Check all rows
-		for eachRow in self.markedSquares:
-			if (''.join(eachRow) == winningData):
+		for eachRow in range(self.cardSize):
+			numMarked = 0
+			for eachCol in range(self.cardSize):
+				if self.isMarked(eachCol, eachRow):
+					numMarked += 1
+			if (numMarked == self.cardSize):
 				return True
 		
 		# Check all cols
-		colData = ''
-		for col in range(0, self.cardSize):
-			colData = ''
-			for row in range(0, self.cardSize):
-				colData += self.markedSquares[row][col]
-			if (''.join(colData) == winningData):
+		for eachCol in range(self.cardSize):
+			numMarked = 0
+			for eachRow in range(self.cardSize):
+				if self.isMarked(eachCol, eachRow):
+					numMarked += 1
+			if (numMarked == self.cardSize):
 				return True
 		
 		return False
@@ -94,7 +87,7 @@ def main(argv):
 	calledNumberStrings = gameData[0].split(',')
 	calledNumbers = [ int(x) for x in calledNumberStrings ]
 	
-	eprint("Called Numbers: {}".format(calledNumbers))
+	#eprint("Called Numbers: {}".format(calledNumbers))
 	
 	# Create all the bingo cards
 	bingoCards = []
@@ -109,12 +102,6 @@ def main(argv):
 	
 	if (len(curCard) != 0):
 		bingoCards.append(BingoCard(curCard))
-		
-	eprint("Initial state:")
-	for eachCard in bingoCards:
-		eprint("Card Data:")
-		eachCard.printCard()
-		eprint("")
 	
 	winningCard = None
 	winningValue = None
@@ -139,14 +126,13 @@ def main(argv):
 			return
 				
 
-				
-		eprint("After {} was called out".format(curCalledNum))
-		
+		'''
+		eprint("After {} was called out".format(curCalledNum))		
 		for eachCard in bingoCards:
 			eprint("Card Data:")
 			eachCard.printCard()
 			eprint("")
-			
+		'''
 
 		
 
