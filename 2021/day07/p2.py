@@ -5,11 +5,15 @@ import sys
 def eprint(*args, **kwargs):
 	print(*args, file=sys.stderr, **kwargs)
 	
+crabDistanceCache = {}
+	
 def crabCalc(dist):
-	retVal = 0
-	for i in range(0,dist+1):
-		retVal += i
-	return retVal
+	if dist not in crabDistanceCache:
+		retVal = sum(range(0,dist+1))
+		crabDistanceCache[dist] = retVal
+		return retVal
+	else:
+		return crabDistanceCache[dist]
 	
 def crabDistance(crabs, dest):
 	#eprint("crabDistance({},{})".format(crabs, dest))
@@ -29,21 +33,18 @@ def main(argv):
 	filedata = f.read().strip().split("\n")
 	f.close()
 	
-	crabs = [ int(x) for x in filedata[0].split(",") ]
-	
+	crabs = [ int(x) for x in filedata[0].split(",") ]	
 	
 	minCrab = min(crabs)
 	maxCrab = max(crabs)
 	
 	solves = {}
-	for i in range(minCrab, maxCrab - 1):
+	for i in range(minCrab, maxCrab + 1):
 		solves[i] = crabDistance(crabs, i)
 		
 	minSolve = min(solves.values())
-	for i in solves:
-		if (solves[i] == minSolve):
-			print("Dist i = {} = {}".format(i, minSolve))
-			
+	print("Solution = {}".format(minSolve))
+
 
 if __name__ == "__main__":
 	main(sys.argv)

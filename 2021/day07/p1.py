@@ -23,18 +23,15 @@ def main(argv):
 	
 	crabs = [ int(x) for x in filedata[0].split(",") ]
 	
-	
 	minCrab = min(crabs)
 	maxCrab = max(crabs)
 	
 	solves = {}
-	for i in range(minCrab, maxCrab - 1):
+	for i in range(minCrab, maxCrab + 1):
 		solves[i] = crabDistance(crabs, i)
 		
 	minSolve = min(solves.values())
-	for i in solves:
-		if (solves[i] == minSolve):
-			print("Dist i = {} = {}".format(i, minSolve))
+	print("Solution = {}".format(minSolve))
 			
 
 if __name__ == "__main__":
