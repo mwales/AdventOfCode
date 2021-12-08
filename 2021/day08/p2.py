@@ -25,16 +25,19 @@ def main(argv):
 	for singleLine in filedata:
 		alldigitstogether, valuedisplay = singleLine.split('|')
 		
-		digits = alldigitstogether.strip().split()
-		
-		# a dictionary mapping digits to sets
+		# a dictionary mapping known digits -> sets of segments that are on
 		key = {}
-		setdigits = [ wordToSet(x) for x in digits ]
+		
+		# setdigits is the list of sets i haven't decoded yet
+		unknownDigits = [ wordToSet(x) for x in alldigitstogether.strip().split() ]
+		
+		# sets in the final value display that i have to decode
 		setvaluedisplay = [ wordToSet(x) for x in valuedisplay.strip().split() ]
 		
-		eprint("len = {}, setdigits = {}".format(len(setdigits), setdigits))
+		eprint("number unknown = {}, unknownDigits = {}".format(len(unknownDigits), unknownDigits))
 		
-		for eachDigit in setdigits:
+		# same idea as part 1, can determine which digits for 1, 4, 7, and 8
+		for eachDigit in unknownDigits:
 			dl = len(eachDigit)
 			if (dl == 2):
 				key[1] = eachDigit
@@ -45,76 +48,76 @@ def main(argv):
 			elif (dl == 7):
 				key[8] = eachDigit
 				
-		setdigits.remove(key[1])
-		setdigits.remove(key[4])
-		setdigits.remove(key[7])
-		setdigits.remove(key[8])
+		unknownDigits.remove(key[1])
+		unknownDigits.remove(key[4])
+		unknownDigits.remove(key[7])
+		unknownDigits.remove(key[8])
 		
-		eprint("len = {}, setdigits = {}".format(len(setdigits), setdigits))
-	
-		eprint("AnsKey = {}".format(key))
-		
-		aa = key[7] - key[1]
-		eprint("aa = {}".format(aa))
+		eprint("number unknown = {}, unknownDigits = {}".format(len(unknownDigits), unknownDigits))
+		eprint("Key = {}".format(key))
 		
 		# Figure out 3 and 6
-		for curDigit in setdigits:
+		for curDigit in unknownDigits:
 			dl = len(curDigit)
 			if (dl == 5):
 				if key[1].issubset(curDigit):
+					# Both 1 segments are in 3, but aren't in 5 or 2
 					key[3] = curDigit
 			if (dl == 6):
 				if not key[1].issubset(curDigit):
+					# 6 digit doesn't contain both the 1 segments (cc and ff), 9 and 0 do
 					key[6] = curDigit
 					
 		eprint("3 = {}".format(key[3]))
 		eprint("6 = {}".format(key[6]))
 		
-		eprint("len = {}, setdigits = {}".format(len(setdigits), setdigits))
+		unknownDigits.remove(key[3])
+		unknownDigits.remove(key[6])
 		
-		setdigits.remove(key[3])
-		setdigits.remove(key[6])
+		eprint("number unknown = {}, unknownDigits = {}".format(len(unknownDigits), unknownDigits))
 		
-		eprint("len = {}, setdigits = {}".format(len(setdigits), setdigits))
-		
+		# The cc segment is the only segment in both 1 and 6
 		cc = key[1] - key[6]
 		eprint("cc = {}, type is {}".format(cc, type(cc)))
 		
-		# Figure out 2
-		for curDigit in setdigits:
+		# Use the cc segment to figure out which remaining set is for a 2
+		for curDigit in unknownDigits:
 			dl = len(curDigit)
 			if (dl == 5):
 				if cc.issubset(curDigit):
 					eprint("Found 5: {}".format(curDigit))
 					key[2] = curDigit
 					
-		setdigits.remove(key[2])
+		unknownDigits.remove(key[2])
 		
-		# Figure out 5
-		for curDigit in setdigits:
+		# Figure out 5 (it's the only number with 5 segments still lit)
+		for curDigit in unknownDigits:
 			dl = len(curDigit)
 			if (dl == 5):
 				key[5] = curDigit
 				
-		setdigits.remove(key[5])
+		unknownDigits.remove(key[5])
 		
-		eprint("2 = {}, 5 = {}, num left = {}".format(key[2], key[5], setdigits))
+		eprint("2 = {}, 5 = {}, num left = {}".format(key[2], key[5], unknownDigits))
 		
-		if key[5].issubset(setdigits[0]):
-			key[9] = setdigits[0]
-			key[0] = setdigits[1]
+		# Only 2 unknown digits left
+		# All segments of the 5 digit are also in the 9 digit
+		if key[5].issubset(unknownDigits[0]):
+			key[9] = unknownDigits[0]
+			key[0] = unknownDigits[1]
 		else:
-			key[9] = setdigits[1]
-			key[0] = setdigits[0]
+			key[9] = unknownDigits[1]
+			key[0] = unknownDigits[0]
 		
+		# Now that we have the key to everything, conver the value display to a string of digits
 		numStringValueDisplay = ""
 		for eachVal in setvaluedisplay:
 			for eachKeySet in key:
 				if key[eachKeySet] == eachVal:
 					numStringValueDisplay += str(eachKeySet)
-			
-		print("Num = {}".format(numStringValueDisplay))
 		
+		# Convert the numeric string to an integer, sum for the solution
+		print("Num = {}".format(numStringValueDisplay))		
 		solution += int(numStringValueDisplay)
 	
 	print("Solution = {}".format(solution))
