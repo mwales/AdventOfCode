@@ -26,17 +26,14 @@ def getNeighborPoints(x, y, mapData):
 	return retVal
 	
 def getHeight(x, y, mapData):
-	#eprint("getHeight({},{})".format(x,y))
 	return int(mapData[y][x])
-	
-
 	
 def isPointLow(x, y, mapData):
 	# Get our point
 	pt = getHeight(x,y,mapData)
 	
 	neighbors = getNeighborPoints(x, y, mapData)
-	eprint("Ns: {}".format(neighbors))
+	# eprint("Ns: {}".format(neighbors))
 	for eachN in neighbors:
 		(xCheck, yCheck) = eachN
 		if (pt >= getHeight(xCheck, yCheck, mapData)):
@@ -44,6 +41,8 @@ def isPointLow(x, y, mapData):
 	
 	return True
 	
+# Starting from a low point, create a set of points for the basin by
+# filling the basin up 1 level at a time
 def fillBasin(x, y, mapData):
 	retVal = set()
 	retVal.add((x,y))
@@ -55,43 +54,48 @@ def fillBasin(x, y, mapData):
 		for eachPoint in checkMe:
 			ptX, ptY = eachPoint
 			if eachPoint in retVal:
-				eprint("{} already part of basin at {},{}".format(eachPoint, x, y))
+				#eprint("{} already part of basin at {},{}".format(eachPoint, x, y))
 				continue
 			
 			h = getHeight(ptX, ptY, mapData)
 			if ( h == curHeight):
-				eprint("({} is part of basin at {},{}".format(eachPoint, x, y))
+				#eprint("({} is part of basin at {},{}".format(eachPoint, x, y))
 				retVal.add(eachPoint)
 				for nn in getNeighborPoints(ptX, ptY, mapData):
 					nextCheck.add(nn)
 				continue
 				
 			if (h == 9):
-				eprint("{} is height 9, not part of a basin".format(eachPoint))
+				#eprint("{} is height 9, not part of a basin".format(eachPoint))
 				continue
 				
 			if (h < curHeight):
-				eprint("{} is to low, cant be part of basin {},{}".format(eachPoint, x, y))
+				#eprint("{} is to low, cant be part of basin {},{}".format(eachPoint, x, y))
 				continue
 				
 			# check again
 			nextCheck.add(eachPoint)
 		
-		eprint("Finished check for h = {}".format(curHeight))
+		#eprint("Finished check for h = {}".format(curHeight))
 		curHeight += 1
 		checkMe = nextCheck
 		
 	return retVal
 
+# Size of the top 3 basins multiplied together
 def scoreBasins(basinList):
 	sizeList = [ len(x) for x in basinList ]
 	
 	score = 1
+	maxThree = []
 	for i in range(3):
 		maxSize = max(sizeList)
 		score *= maxSize
 		sizeList.remove(maxSize)
+		maxThree.append(maxSize)
 		
+	scoreStrs = [ str(x) for x in maxThree ]
+	eprint("Score = {} = {}".format(" * ".join(scoreStrs), score))
 	return score
 
 	
@@ -127,8 +131,7 @@ def main(argv):
 		
 	
 	s = scoreBasins(basinCollection)
-	print("Score = {}".format(s))
-	
+	print("Score = {}".format(s))	
 
 if __name__ == "__main__":
 	main(sys.argv)

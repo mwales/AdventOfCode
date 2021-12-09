@@ -5,32 +5,38 @@ import sys
 def eprint(*args, **kwargs):
 	print(*args, file=sys.stderr, **kwargs)
 	
+def getNeighborPoints(x, y, mapData):
+	retVal = set()
+	# Check N
+	if (y >= 1):
+		retVal.add( (x,y-1) )
+	
+	# Check S
+	if (y + 1 < len(mapData)):
+		retVal.add( (x,y+1) )
+	
+	# Chech W
+	if (x >= 1):
+		retVal.add( (x-1, y) )
+	
+	# Check E
+	if ( x + 1 < len(mapData[0])):
+		retVal.add( (x+1,y) )
+		
+	return retVal
+	
 def getHeight(x, y, mapData):
-	#eprint("getHeight({},{})".format(x,y))
 	return int(mapData[y][x])
 	
 def isPointLow(x, y, mapData):
 	# Get our point
 	pt = getHeight(x,y,mapData)
 	
-	# Check N
-	if (y >= 1):
-		if (pt >= getHeight(x, y-1, mapData)):
-			return False
-	
-	# Check S
-	if (y + 1 < len(mapData)):
-		if (pt >= getHeight(x, y+1, mapData)):
-			return False
-	
-	# Chech W
-	if (x >= 1):
-		if (pt >= getHeight(x - 1, y, mapData)):
-			return False
-	
-	# Check E
-	if ( x + 1 < len(mapData[0])):
-		if (pt >= getHeight(x+1, y, mapData)):
+	neighbors = getNeighborPoints(x, y, mapData)
+	# eprint("Ns: {}".format(neighbors))
+	for eachN in neighbors:
+		(xCheck, yCheck) = eachN
+		if (pt >= getHeight(xCheck, yCheck, mapData)):
 			return False
 	
 	return True
