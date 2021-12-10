@@ -5,36 +5,22 @@ import sys
 def eprint(*args, **kwargs):
 	print(*args, file=sys.stderr, **kwargs)
 	
-def scoreBadCharacter(badchar):
-	scoreTable = { ')' : 3, ']' : 57, '}' : 1197, '>' : 25137 }
-	return scoreTable[badchar]
-
-def scoreTermCharacter(badchar):
-	scoreTable = { '(' : 1, '[' : 2, '{' : 3, '<' : 4 }
-	return scoreTable[badchar]
-	
 def checkLine(singleLine):
 	symStack = []
-	startChar = [ '(', '[', '{', '<' ]
-	stopChar = [ ')', ']', '}', '>' ]
-	
+	startStopMap = { ')': '(', ']' : '[', '}' : '{', '>' : '<' }
+	scoreTable = { '(' : 1, '[' : 2, '{' : 3, '<' : 4 }
 	
 	eprint("Start processing: {}".format(singleLine))
 	
 	for singleChar in singleLine:
-		if singleChar in startChar:
-			eprint("Adding to stack: {}".format(singleChar))
+		if singleChar in startStopMap.values():
+			#eprint("Adding to stack: {}".format(singleChar))
 			symStack.append(singleChar)
 		else:
-			if symStack.pop() == startChar[stopChar.index(singleChar)]:
-				eprint("Remvoing from stack: {}".format(singleChar))
-
-			else:
+			if symStack.pop() != startStopMap[singleChar]:
 				eprint("{} bad {}".format(singleLine, singleChar))
 				return 0
-	
-	eprint("{} OK".format(singleLine))
-	
+		
 	# Finish the line
 	eprint("symStack = {}".format(symStack))
 	
@@ -42,10 +28,8 @@ def checkLine(singleLine):
 	while len(symStack) > 0:
 		termChar = symStack.pop()
 		score *= 5
-		score += scoreTermCharacter(termChar)
-		eprint("Score after loop = {}".format(score))
-		
-	
+		score += scoreTable[termChar]
+		#eprint("Score after loop = {}".format(score))
 		
 	eprint("Score = {}".format(score))
 	return score
