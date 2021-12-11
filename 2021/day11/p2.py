@@ -10,58 +10,47 @@ def printMap(octos, size):
 		text = ""
 		for x in range(size[0]):
 			text += str(octos[(x,y)])
-		print(text)
+		eprint(text)
 		
 def iterateMap(octos, size):
 	flashMap = set()
-	checkMe = []
+	increasePts = []
 	
+	# Whole area should be iterated at least once
 	for x in range(size[0]):
 		for y in range(size[1]):
-			octos[(x,y)] += 1
+			increasePts.append((x,y))
 			
-			if (octos[(x,y)] >= 10):
-				eprint("{} flashing in first loop".format((x,y)))
-				flashMap.add((x,y))
-				checkMe.extend(neighbors(size, (x,y)))
-				
-	
-			
-	
-	while (len(checkMe) > 0):
-		print("CheckMe = {}".format(checkMe))
-		pt = checkMe.pop()
-		print("Checking {}".format(pt))
+	while (len(increasePts) > 0):
+		#eprint("CheckMe = {}".format(increasePts))
+		pt = increasePts.pop()
 		octos[pt] += 1
 		if (octos[pt] >= 10) and (pt not in flashMap):
-			eprint("Additional flash at {}".format(pt))
+			#eprint("Flash at {}".format(pt))
 			flashMap.add(pt)
-			checkMe.extend(neighbors(size,pt))
+			increasePts.extend(neighbors(size,pt))
 			
 	# Reset all flashed cells to zero
 	for fc in flashMap:
 		octos[fc] = 0
 		
-	return len(flashMap)
-	
-	
+	return len(flashMap)	
 
 def neighbors(size, point):
 	retVal = []
+	modPoints = []
 	for xMod in range(-1, 2):
 		for yMod in range(-1, 2):
 			x = point[0] + xMod
 			y = point[1] + yMod
-			# Filter out bad ones
-			if (x < 0) or (y < 0):
-				continue
-			if (x,y) == point:
-				continue; # not self
-			if (x >= size[0]) or (y >= size[1]):
-				continue
-				
-			retVal.append( (x,y) )
-	return retVal
+			
+			modPoints.append( (x,y) )
+	
+	# Don't add self
+	modPoints.remove(point)
+
+	ptsInRange = [ pt for pt in modPoints if (0 <= pt[0] < size[0]) and (0 <= pt[1] < size[1]) ]	
+	return ptsInRange
 	
 
 def main(argv):
@@ -84,21 +73,21 @@ def main(argv):
 	
 	printMap(octos, ms)
 	
-	totalFlashes = 0
-	firstFullFlash = None
+	fullFlashSize = ms[0] * ms[1]
 	i = 0
 	while True:
 		i += 1
 		f = iterateMap(octos, ms)
-		totalFlashes += f
 		
-		if (f == ms[0] * ms[1]):
-			break
 		eprint("After iteration {}".format(i+1))
-		eprint("Flashes = {}, total flashes = {}".format(f, totalFlashes))
+		eprint("Flashes = {}".format(f))
 		printMap(octos, ms)
+		
+		if (f == fullFlashSize):
+			break
+		
 	
-	print("First Flash = {}".format(i))
+	print("First Full Flash = {}".format(i))
 	
 if __name__ == "__main__":
 	main(sys.argv)
