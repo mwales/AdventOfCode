@@ -6,16 +6,13 @@ def eprint(*args, **kwargs):
 	print(*args, file=sys.stderr, **kwargs)
 
 def isPathOk(path):
-	eprint("isPathOk({})".format(path))
-	
 	if (path[0] != "start"):
-		eprint("Path should start with start!")
 		return False
 		
 	afterStart = path[1:]
 	if ("start" in afterStart):
 		# Start can only be visited once
-		eprint("Can only visit start once")
+		#eprint("Can only visit start once")
 		return False
 		
 	# count up small cave visits
@@ -33,17 +30,16 @@ def isPathOk(path):
 			continue
 			
 		if (c > 2):
-			eprint("Node {} is more than 2 visit".format(node))
+			#eprint("Node {} is more than 2 visit".format(node))
 			return False
 			
-		# C is 2 if we get here
+		# C is 2 if we get here, allowed to get here once per path
 		if single2CountNode == None:
 			single2CountNode = node
 		else:
-			eprint("2nd 2 count node, only 1 allowed")
+			#eprint("2nd 2 count node, only 1 allowed")
 			return False
 		
-	eprint("Path is OK")
 	return True
 		
 
@@ -57,31 +53,24 @@ def findNewPaths(mm, currentPath):
 	  if empty list returned, cant get to end from this node
 	'''
 	
-	eprint("findNewPaths(mm, {})".format(currentPath))
+	#eprint("findNewPaths(mm, {})".format(currentPath))
 	retVal = []
 	currentLoc = currentPath[-1]
 	possibleNextLocations = mm[currentLoc]
-	eprint("Possible nextloc @ = {}".format(possibleNextLocations))
 	
 	# Great news, u are where u want to be
 	if (currentLoc == "end"):
-		eprint("Special case, end is the end!")
 		return [ currentPath ]
 		
 	
 	for nextLoc in possibleNextLocations:
-		eprint("nextLoc is {}".format(nextLoc))
+		#eprint("nextLoc is {}".format(nextLoc))
 			
 		recursivePath = currentPath.copy()
-		eprint("recurPath = {}".format(recursivePath))
 		recursivePath.append(nextLoc)
 		
 		if not isPathOk(recursivePath):
-			eprint("Path aas not OK!")
 			continue
-		
-		eprint("recurPath = {}".format(recursivePath))
-		
 		
 		nextPaths = findNewPaths(mm, recursivePath)
 		
@@ -113,7 +102,7 @@ def main(argv):
 	
 	for singleLink in stringData:
 		a,b = singleLink.split('-')
-		print("a = {}, b = {}".format(a, b))
+		#eprint("a = {}, b = {}".format(a, b))
 		
 		aList = mm.get(a, [])
 		aList.append(b)
@@ -122,13 +111,8 @@ def main(argv):
 		bList.append(a)
 		mm[b] = bList
 	
-	print("mm = {}".format(mm))
-	
-		
-	discoveredPaths = {}
-	
 	pp = findNewPaths(mm, [ "start" ])
-	print("pp = {}".format(pp))
+	#eprint("pp = {}".format(pp))
 	print("len of pp = {}".format(len(pp)))
 		
 if __name__ == "__main__":

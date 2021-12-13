@@ -19,26 +19,21 @@ def findNewPaths(mm, currentPath):
 	retVal = []
 	currentLoc = currentPath[-1]
 	possibleNextLocations = mm[currentLoc]
-	eprint("Possible nextloc @ = {}".format(possibleNextLocations))
 	
 	# Great news, u are where u want to be
 	if (currentLoc == "end"):
 		eprint("Special case, end is the end!")
 		return [ currentPath ]
-		
 	
 	for nextLoc in possibleNextLocations:
-		eprint("nextLoc is {}".format(nextLoc))
+		#eprint("nextLoc is {}".format(nextLoc))
 		if (nextLoc in currentPath) and (nextLoc.islower()):
-			eprint("Can't visit {} twice!".format(nextLoc))
+			#eprint("Can't visit {} twice!".format(nextLoc))
 			continue
 			
 		recursivePath = currentPath.copy()
 		eprint("recurPath = {}".format(recursivePath))
 		recursivePath.append(nextLoc)
-		
-		eprint("recurPath = {}".format(recursivePath))
-		
 		
 		nextPaths = findNewPaths(mm, recursivePath)
 		
@@ -66,11 +61,9 @@ def main(argv):
 	stringData = f.read().strip().split("\n")
 	f.close()
 	
-	mm = {}
-	
+	mm = {}	
 	for singleLink in stringData:
 		a,b = singleLink.split('-')
-		print("a = {}, b = {}".format(a, b))
 		
 		aList = mm.get(a, [])
 		aList.append(b)
@@ -79,13 +72,10 @@ def main(argv):
 		bList.append(a)
 		mm[b] = bList
 	
-	print("mm = {}".format(mm))
-	
+	#eprint("mm = {}".format(mm))	
 		
-	discoveredPaths = {}
-	
 	pp = findNewPaths(mm, [ "start" ])
-	print("pp = {}".format(pp))
+	#print("pp = {}".format(pp))
 	print("len of pp = {}".format(len(pp)))
 		
 if __name__ == "__main__":
