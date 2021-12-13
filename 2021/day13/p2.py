@@ -25,7 +25,7 @@ def printMap(md):
 				rowText += '#'
 			else:
 				rowText += '.'
-		print(rowText)
+		eprint(rowText)
 		
 def verticalFold(md, row):
 	eprint("Vertical fold at {}".format(row))
@@ -48,6 +48,14 @@ def horizontalFold(md, col):
 			xt = col - (x - col)
 			newMap.add( (xt,y) )
 	return newMap
+	
+def fold(md, fold):
+	# mapdata is a set of (x,y), (x or y, row/col)
+	if fold[0] == 'y':
+		md = verticalFold(md, fold[1])
+	else:
+		md = horizontalFold(md, fold[1])
+	return md
 
 def main(argv):
 	
@@ -73,26 +81,16 @@ def main(argv):
 			mapData.add( (int(x),int(y)) )			
 		else:
 			# Getting fold data
-			eprint("Fold: {}".format(sl))
 			words = sl.split(' ')
 			fd = words[2].split('=')
-			eprint(fd)
 			foldData.append( (fd[0], int(fd[1])) )
 			
 	printMap(mapData)
 	print("FD = {}".format(foldData))
 	
-	for eachfold in foldData:
-		if eachfold[0] == 'y':
-			mapData = verticalFold(mapData, eachfold[1])
-		else:
-			mapData = horizontalFold(mapData, eachfold[1])
-			
-		print("Num dots after fold = {}".format(len(mapData)))
-			
+	for eachFold in foldData:
+		mapData = fold(mapData, eachFold)
 		printMap(mapData)
-		
-	print("Number set = {}".format(len(mapData)))
 	
 if __name__ == "__main__":
 	main(sys.argv)
