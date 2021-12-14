@@ -1,0 +1,6149 @@
+Begin polyermer: NNCB
+nextSub = NN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CB
+Adding HB
+After 1, len = 7|, poly = NCNBCHB
+nextSub = NC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+After 2, len = 13|, poly = NBCCNBBBCBHCB
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+After 3, len = 25|, poly = NBBBCNCCNBBNBNBBCHBHHBCHB
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+After 4, len = 49|, poly = NBBNBNBBCCNBCNCCNBBNBBNBBBNBBNBBCBHCBHHNHCBBCBHCB
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+After 5, len = 97|, poly = NBBNBBNBBBNBBNBBCNCCNBBBCCNBCNCCNBBNBBNBBNBBNBBNBNBBNBBNBBNBBNBBCHBHHBCHBHHNHCNCHBCHBNBBCHBHHBCHB
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+After 6, len = 193|, poly = NBBNBBNBBNBBNBBNBNBBNBBNBBNBBNBBCCNBCNCCNBBNBNBBCNCCNBBBCCNBCNCCNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCBHCBHHNHCBBCBHCBHHNHCNCHBCCNBCBHCBBCBHCBBNBBNBBCBHCBHHNHCBBCBHCB
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+After 7, len = 385|, poly = NBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCNCCNBBBCCNBCNCCNBBNBBNBBBNBBNBBCCNBCNCCNBBNBNBBCNCCNBBBCCNBCNCCNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCHBHHBCHBHHNHCNCHBCHBNBBCHBHHBCHBHHNHCNCHBCCNBCBHCBBCNCCNBBBCHBHHBCHBNBBCHBHHBCHBNBBNBBNBBNBBNBBCHBHHBCHBHHNHCNCHBCHBNBBCHBHHBCHB
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+After 8, len = 769|, poly = NBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCCNBCNCCNBBNBNBBCNCCNBBBCCNBCNCCNBBNBBNBBNBBNBBNBNBBNBBNBBNBBNBBCNCCNBBBCCNBCNCCNBBNBBNBBBNBBNBBCCNBCNCCNBBNBNBBCNCCNBBBCCNBCNCCNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCBHCBHHNHCBBCBHCBHHNHCNCHBCCNBCBHCBBCBHCBBNBBNBBCBHCBHHNHCBBCBHCBHHNHCNCHBCCNBCBHCBBCNCCNBBBCHBHHBCHBNBBCCNBCNCCNBBNBNBBCBHCBHHNHCBBCBHCBBNBBNBBCBHCBHHNHCBBCBHCBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCBHCBHHNHCBBCBHCBHHNHCNCHBCCNBCBHCBBCBHCBBNBBNBBCBHCBHHNHCBBCBHCB
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+After 9, len = 1537|, poly = NBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCNCCNBBBCCNBCNCCNBBNBBNBBBNBBNBBCCNBCNCCNBBNBNBBCNCCNBBBCCNBCNCCNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCCNBCNCCNBBNBNBBCNCCNBBBCCNBCNCCNBBNBBNBBNBBNBBNBNBBNBBNBBNBBNBBCNCCNBBBCCNBCNCCNBBNBBNBBBNBBNBBCCNBCNCCNBBNBNBBCNCCNBBBCCNBCNCCNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCHBHHBCHBHHNHCNCHBCHBNBBCHBHHBCHBHHNHCNCHBCCNBCBHCBBCNCCNBBBCHBHHBCHBNBBCHBHHBCHBNBBNBBNBBNBBNBBCHBHHBCHBHHNHCNCHBCHBNBBCHBHHBCHBHHNHCNCHBCCNBCBHCBBCNCCNBBBCHBHHBCHBNBBCCNBCNCCNBBNBNBBCBHCBHHNHCBBCBHCBBNBBNBBCNCCNBBBCCNBCNCCNBBNBBNBBBNBBNBBCHBHHBCHBHHNHCNCHBCHBNBBCHBHHBCHBNBBNBBNBBNBBNBBCHBHHBCHBHHNHCNCHBCHBNBBCHBHHBCHBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCHBHHBCHBHHNHCNCHBCHBNBBCHBHHBCHBHHNHCNCHBCCNBCBHCBBCNCCNBBBCHBHHBCHBNBBCHBHHBCHBNBBNBBNBBNBBNBBCHBHHBCHBHHNHCNCHBCHBNBBCHBHHBCHB
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BH
+Adding HH
+nextSub = HC
+Adding BC
+nextSub = CB
+Adding HB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CC
+Adding NC
+nextSub = CN
+Adding CN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HN
+Adding CN
+nextSub = NH
+Adding CH
+nextSub = HC
+Adding BC
+nextSub = CN
+Adding CN
+nextSub = NC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BN
+Adding BN
+nextSub = NB
+Adding BB
+nextSub = BB
+Adding NB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+nextSub = BH
+Adding HH
+nextSub = HH
+Adding NH
+nextSub = HB
+Adding CB
+nextSub = BC
+Adding BC
+nextSub = CH
+Adding BH
+nextSub = HB
+Adding CB
+After 10, len = 3073|, poly = NBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCCNBCNCCNBBNBNBBCNCCNBBBCCNBCNCCNBBNBBNBBNBBNBBNBNBBNBBNBBNBBNBBCNCCNBBBCCNBCNCCNBBNBBNBBBNBBNBBCCNBCNCCNBBNBNBBCNCCNBBBCCNBCNCCNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCNCCNBBBCCNBCNCCNBBNBBNBBBNBBNBBCCNBCNCCNBBNBNBBCNCCNBBBCCNBCNCCNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCCNBCNCCNBBNBNBBCNCCNBBBCCNBCNCCNBBNBBNBBNBBNBBNBNBBNBBNBBNBBNBBCNCCNBBBCCNBCNCCNBBNBBNBBBNBBNBBCCNBCNCCNBBNBNBBCNCCNBBBCCNBCNCCNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCBHCBHHNHCBBCBHCBHHNHCNCHBCCNBCBHCBBCBHCBBNBBNBBCBHCBHHNHCBBCBHCBHHNHCNCHBCCNBCBHCBBCNCCNBBBCHBHHBCHBNBBCCNBCNCCNBBNBNBBCBHCBHHNHCBBCBHCBBNBBNBBCBHCBHHNHCBBCBHCBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCBHCBHHNHCBBCBHCBHHNHCNCHBCCNBCBHCBBCBHCBBNBBNBBCBHCBHHNHCBBCBHCBHHNHCNCHBCCNBCBHCBBCNCCNBBBCHBHHBCHBNBBCCNBCNCCNBBNBNBBCBHCBHHNHCBBCBHCBBNBBNBBCNCCNBBBCCNBCNCCNBBNBBNBBBNBBNBBCHBHHBCHBHHNHCNCHBCHBNBBCHBHHBCHBNBBNBBNBBNBBNBBCCNBCNCCNBBNBNBBCNCCNBBBCCNBCNCCNBBNBBNBBNBBNBBNBNBBNBBNBBNBBNBBCBHCBHHNHCBBCBHCBHHNHCNCHBCCNBCBHCBBCBHCBBNBBNBBCBHCBHHNHCBBCBHCBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCBHCBHHNHCBBCBHCBHHNHCNCHBCCNBCBHCBBCBHCBBNBBNBBCBHCBHHNHCBBCBHCBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCBHCBHHNHCBBCBHCBHHNHCNCHBCCNBCBHCBBCBHCBBNBBNBBCBHCBHHNHCBBCBHCBHHNHCNCHBCCNBCBHCBBCNCCNBBBCHBHHBCHBNBBCCNBCNCCNBBNBNBBCBHCBHHNHCBBCBHCBBNBBNBBCBHCBHHNHCBBCBHCBBNBBNBBNBBNBBNBBNBBNBBNBBNBBNBBCBHCBHHNHCBBCBHCBHHNHCNCHBCCNBCBHCBBCBHCBBNBBNBBCBHCBHHNHCBBCBHCB
