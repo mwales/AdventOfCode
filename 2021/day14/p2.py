@@ -20,6 +20,14 @@ def freqAnal(polymer, pcs):
 	minVal = min(counts.values())
 	maxVal = max(counts.values())
 	
+	'''
+	for key in counts:
+		if counts[key] == minVal:
+			eprint("min = {} = {}".format(key, counts[key]))
+		if counts[key] == maxVal:
+			eprint("max = {} = {}".format(key, counts[key]))
+	'''
+	
 	print("Sol = {}".format(maxVal - minVal))
 	
 def expand(polymerCounts, rules):
@@ -31,7 +39,7 @@ def expand(polymerCounts, rules):
 			result1 = polys[0] + rules[polys]
 			result2 = rules[polys] + polys[1]
 			
-			eprint("Reaction for poly {} = {} + {}".format(polys, result1, result2))
+			#eprint("Reaction for poly {} = {} + {}".format(polys, result1, result2))
 			
 			rc1 = nextCounts.get(result1, 0)
 			rc1 += polymerCounts[polys]
@@ -40,9 +48,10 @@ def expand(polymerCounts, rules):
 			rc2 = nextCounts.get(result2, 0)
 			rc2 += polymerCounts[polys]
 			nextCounts[result2] = rc2
-			eprint("NC = {}".format(nextCounts))
+			#eprint("NC = {}".format(nextCounts))
 			
 		else:
+			# I don't think this code block is ever reached with the input from AoC
 			eprint("No reaction for poly {}".format(polys))
 			cc = nextCounts.get(polys, 0)
 			cc += polymerCounts[polys]
@@ -86,13 +95,19 @@ def main(argv):
 	
 	pcs = convertPolymerToPairCounts(polymer)
 	
-	for i in range(40):
+	for i in range(10):
 		pcs = expand(pcs, subRules)
-		eprint("After {}, pcs = {}".format(i+1, pcs))
+		#eprint("After {}, pcs = {}".format(i+1, pcs))
 	
+	print("After 10 iterations")
 	freqAnal(polymer, pcs)
 	
+	for i in range(10, 40):
+		pcs = expand(pcs, subRules)
+		#eprint("After {}, pcs = {}".format(i+1, pcs))
 	
+	print("After 40 iterations")
+	freqAnal(polymer, pcs)
 	
 if __name__ == "__main__":
 	main(sys.argv)
