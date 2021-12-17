@@ -1,0 +1,7 @@
+Start solve
+Traceback (most recent call last):
+  File "./p2.py", line 276, in <module>
+    main(sys.argv)
+  File "./p2.py", line 209, in main
+    cd = mapToCellData(stringData)
+NameError: name 'mapToCellData' is not defined
