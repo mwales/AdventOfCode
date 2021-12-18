@@ -21,13 +21,7 @@ def isMiss(xTarget, yTarget, pos):
 		
 	if (pos[1] < yTarget[0]):
 		return True
-		
-def isUndershot(xTarget, yTarget, path):
-	for eachPt in path:
-		if (eachPt[0] >= xTarget[0]) and (eachPt[1] >= yTarget[0]):
-			return False
-	return True
-		
+
 def isInTarget(xTarget, yTarget, pos):
 	if ( xTarget[0] <= pos[0] <= xTarget[1] ):
 		if ( yTarget[0] <= pos[1] <= yTarget[1] ):
@@ -101,16 +95,14 @@ def main(argv):
 	stringData = f.read().strip().split("\n")
 	f.close()
 	
+	# 1/2 the challenge, parsing the input
 	xBegPos = stringData[0].index("=")
 	xEndPos = stringData[0].index(",", xBegPos)
 	xStr = stringData[0][xBegPos+1: xEndPos]
-	eprint("xBegPos = {}, xEndPos = {}".format(xBegPos, xEndPos))
-	eprint("xStr = {}".format(xStr))
 	xComponents = xStr.split("..")
 	eprint("xComp = {}".format(xComponents))
 	
 	yStr = stringData[0][xEndPos+1:]
-	eprint("yStr = {}".format(yStr))
 	yComponents = yStr[3:].split("..")
 	eprint("yComp = {}".format(yComponents))
 	
@@ -121,16 +113,6 @@ def main(argv):
 	
 	xMinPow = minXPower(xTarget[0])
 	eprint("X min power = {}".format(xMinPow))
-	
-	mv = (6,3)
-	
-	eprint(calcShot(xTarget, yTarget, mv))
-	
-	success, finalPos, path, maxY = calcShot(xTarget, yTarget, mv)
-	
-	printShot(xTarget, yTarget, path)
-	
-	eprint("MaxY = {}".format(maxY))
 	
 	hits = 0
 	allMaxY = 0
@@ -147,13 +129,11 @@ def main(argv):
 				if (maxY > allMaxY):
 					eprint("New max y = {}".format(maxY))
 					allMaxY = maxY
-					
+				
 				hits += 1
 				
-				
-									
-	eprint("Final solve: {}".format(allMaxY))
-	eprint("Pt 2: {}".format(hits))
+	print("Pt 1: {}".format(allMaxY))
+	print("Pt 2: {}".format(hits))
 	
 	
 if __name__ == "__main__":
