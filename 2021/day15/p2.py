@@ -18,13 +18,12 @@ class CellData:
 			n = getCell(cd, npos)
 			ndist = self.dist + n.weight
 			if (n.dist == None) or (n.dist > ndist):
-				# Update neighbor distance
+				# Update neighbor distance and path
 				n.dist = ndist
-				#eprint("path = {}".format(n.path))
-				#eprint("path = {}, pathcopy = {}".format(self.path, self.path[:]))
+				# A bug that tripped me up.  You can't self.path[:].append() 
+				# in the same statement.  Append doesn't return reference
 				n.path = self.path[:]
 				n.path.append(n.pos)
-				#eprint("setting path for {} to {}".format(n.pos, n.path))
 				retval.append(n)
 		return retval
 	
@@ -34,9 +33,9 @@ class CellData:
 	def toString(self):
 		#eprint("toString(x={}, y={}, weight={}, dist={}".format(self.pos[0], self.pos[1], self.weight, self.dist))
 		if self.dist == None:
-			return "%2d [None] " % (self.weight) + str(self.pos) + "   "
+			return "%2d [None]   " % (self.weight)
 		else:
-			return "%2d [%4d] " % (self.weight, self.dist) + str(self.pos) + "   "
+			return "%2d [%4d]   " % (self.weight, self.dist)
 
 def eprint(*args, **kwargs):
 	print(*args, file=sys.stderr, **kwargs)
@@ -79,8 +78,6 @@ def weightDataToCellData(wd):
 			row.append(CellData(x,y,wd[y][x]))
 		retVal.append(row)
 	return retVal
-		
-
 
 def getCell(cellData, pos):
 	return cellData[pos[1]][pos[0]]
@@ -95,53 +92,19 @@ def addToAll(matrix, addVal):
 					matrix[y][x] = 1
 					
 def addToRight(leftMatrix, rightMatrix):
-	# pos is all screwed up, so reinit
+	# For simple 2-d matrices
+	# Merges right-matrix into the left-matrix row by row
+	# pos is all screwed up afterwards, so reinit
 	for r in range(len(leftMatrix)):
-		#eprint("loop")
-		#printWeightData(leftMatrix)
-		#xToAdd = 0
-		#newXPos = len(leftMatrix[r])
-		#for newItem in rightMatrix[r]:
-			# Add the cell to the end of the left matrix
 		leftMatrix[r].extend(rightMatrix[r][:])
-		#printWeightData(leftMatrix)
 
 def addToBottom(topMatrix, bottomMatrix):
-	# pos is all screwed up, so reinit
-	eprint("addToBottom called with matrix sizes of {}x{} and {}x{}".format(len(topMatrix[0]), len(topMatrix), len(bottomMatrix[0]), len(bottomMatrix)))
-	'''numRowsToCopy = len(bottomMatrix)
-	
-	newRowCollection = []
-	for r in range(numRowsToCopy):
-		
-		newRow = []
-		for newItem in bottomMatrix[r]:
-			# Add the cell to the end of the left matrix
-			newRow.append(newItem)
-			
-			# Update the pos of the new cell
-			#newItem.pos = (newItem.pos[0], newItem.pos[1] + len(topMatrix))
-		
-		newRowCollection.append(newRow)
-	topMatrix.extend(newRowCollection)
-	'''
+	# For simple 2-d matrices
+	# Merges bottom-matrix into the top-matrix by adding new rows
+	# pos is all screwed up afterwards, so reinit
+	# eprint("addToBottom called with matrix sizes of {}x{} and {}x{}".format(len(topMatrix[0]), len(topMatrix), len(bottomMatrix[0]), len(bottomMatrix)))
 	for row in bottomMatrix:
 		topMatrix.append(row[:])
-
-		
-def copyCells(cellData):
-	retVal = []
-	for row in cellData:
-		newRowData = []
-		for col in row:
-			newRowData.append(col.copy())
-		retVal.append(newRowData)
-	return retVal
-	
-
-
-
-
 
 def reinitMatrix(cd):
 	y = 0
@@ -179,25 +142,17 @@ def solveMap(cd):
 	
 	eprint("Solving...")
 	ms = getSize(cd)
-	printWeightData(cd)
-	
-	#eprint("Did it have a dist set?")
+	#printCellMap(cd)
 	
 	workList = []
 	workList.extend(startPoint.updateNeighbors(ms, cd))
 	
-	destination = getCell(cd, (ms[0]-1, ms[1]-1))	
+	destination = getCell(cd, (ms[0]-1, ms[1]-1))
 	
-	i = 0
 	while True:
-		i += 1
 		#printWeightMap(cd)
-		
 		workList.sort()
-		
 		ni = workList.pop(0)
-		
-		#eprint("Iter {}, working {}".format(i, ni.pos))
 		
 		workList.extend(ni.updateNeighbors(ms, cd))
 		
@@ -227,55 +182,34 @@ def main(argv):
 	return
 	'''
 
-	eprint("Extended cell")
+	eprint("Extending cells to the right")
+	
 	extendedCell = copy.deepcopy(wd)
-	printWeightData(extendedCell)
+	#printWeightData(extendedCell)
 	
-	eprint("WD map:")
-	printWeightData(wd)
-	
-	
+	# Craft a new map 5x the size of the old one.
+	# Start by crafting matrix the is 5x the width of old matrix
 	for i in range(4):
-		#extendedCell = copy.deepcopy(wd)
-		
-		eprint("Added 1 to all")
 		addToAll(extendedCell, 1)
-		printWeightData(extendedCell)
-		
 		addToRight(wd, extendedCell)
-		print("Iteration {}".format(i))
-		printWeightData(wd)
+		
+	#printWeightData(wd)	
+	#eprint("Time to start adding bottom rows")
 
-	eprint("Final")
-
-	printWeightData(wd)
-	
-	eprint("Time to start adding bottom rows")
-
-	
-	
+	eprint("Extending cells to the bottom")
 	extendedCell = copy.deepcopy(wd)
 	
 	for i in range(4):
-		eprint("Add bottom loop:")
 		addToAll(extendedCell, 1)
-		eprint("After adding 1 to everything")
-		printWeightData(extendedCell)
-		eprint("Adding...")
 		addToBottom(wd, extendedCell)
-		printWeightData(wd)
-		
 	
-	eprint("all done")
-	
+	eprint("5x the size matrix:")
 	printWeightData(wd)
 	
 	cd = weightDataToCellData(wd)
 	solveMap(cd)
 	
-	
-	
+	#printCellMap(cd)
 
-	
 if __name__ == "__main__":
 	main(sys.argv)
