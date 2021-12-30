@@ -210,8 +210,8 @@ class Beacon:
 				return
 		
 	def computeSimilarScore(self, otherBeacon):
-		eprint("computeSimilarScore(ob={} from scanner ID {}), we are {} for scanner ID".format(
-		       self.pos, self.scannerId, otherBeacon.pos, otherBeacon.scannerId))
+		#eprint("computeSimilarScore(ob={} from scanner ID {}), we are {} for scanner ID".format(
+		#       self.pos, self.scannerId, otherBeacon.pos, otherBeacon.scannerId))
 		myDistData = self.nearbyBeacons
 		rhsDistData = otherBeacon.nearbyBeacons[:]
 		
@@ -245,7 +245,7 @@ class Beacon:
 		#if (len(mySharedB)):
 			
 				
-		eprint("Returning similar score of {}".format(len(mySharedB)))
+		#eprint("Returning similar score of {}".format(len(mySharedB)))
 		return len(mySharedB)
 		
 	def computeIdenticalScore(self, otherBeacon):
@@ -348,8 +348,12 @@ class Scanner:
 			
 			eprint("findClosestScanner summary: {}".format(osSharedList))
 			maxShared = max(osSharedList)
-			maxSharedIndex = osSharedList.index(maxShared)
-			return listOfOtherScanners[maxSharedIndex]
+			
+			if maxShared < 5:
+				return None
+			else:
+				maxSharedIndex = osSharedList.index(maxShared)
+				return listOfOtherScanners[maxSharedIndex]
 			
 	def numberOfSharedBeacons(self, otherScanner):
 		fullMax = []
@@ -409,13 +413,60 @@ class Scanner:
 
 		
 	def rotateScanner(self, rotNumber):
-		eprint("Rotating scanner {} to rot num {}".format(self.scannerId, rotNumber))
+		#eprint("Rotating scanner {} to rot num {}".format(self.scannerId, rotNumber))
 		self.beaconCoords = []
 		for origBeaconCoord in self.origBeaconCoords:
 			nc = applyPointRotation(origBeaconCoord, rotNumber)
 			self.beaconCoords.append(nc)
 			
 		self.createBeaconList()
+		
+	def getAbsBeacondCoords(self):
+		# Returns a list of the beacons with their abs coordinates
+		retVal = set()
+		for b in self.beaconCoords:
+			retVal.add( tuple(vecAdd(self.pos, b))  )
+		return retVal
+		
+def findAndPosNearbyScanners(knownScanners, unknownScanners):
+	# Return a list of scanners that are now known
+	retVal = []
+	eprint("findAndPosNearbyScanners({},{})".format(len(knownScanners), len(unknownScanners)))
+	
+	for ks in knownScanners:
+		closestScanner = ks.findClosestScanner(unknownScanners)
+		
+		if closestScanner == None:
+			eprint("No unknown scanners near scanner {}".format(ks.scannerId))
+			continue
+			
+		eprint("Closest scanner is : {}, rotating through {} positions".format(closestScanner.scannerId, len(transforms)))
+				
+		rotScores = {}
+		for i in range(len(transforms)):
+		#for i in range(6, 7):
+		
+			#eprint("Rotation *************************************************** {}".format(i))
+			closestScanner.rotateScanner(i)
+			#cn.dump()
+			rs = ks.numberOfIdenticalBeacons(closestScanner)
+			rotScores[rs] = i
+			
+		eprint("Rot Scores = {}".format(rotScores))
+		
+		bestRotSame = max([ x for x in rotScores.keys() ])
+		bestRot = rotScores[bestRotSame]
+		eprint("Best Rot = {}".format(bestRot))
+		
+		
+		closestScanner.rotateScanner(bestRot)
+		closestScanner.determineScannerPos(ks)
+		
+		retVal.append(closestScanner)
+		
+	return retVal
+		
+	
 
 def main(argv):
 	
@@ -441,12 +492,43 @@ def main(argv):
 
 	eprint("Created {} scanners".format(len(scannerList)))
 	
+	while len(unknownScanners):
+		eprint("Main search loop executing!")
+		foundScanners = findAndPosNearbyScanners(freshKnownScanners, unknownScanners)
+		
+		eprint("Found scanners: {}".format(len(foundScanners)))
+		
+		for fs in foundScanners:
+			eprint("Updating lists for scanner {}".format(fs.scannerId))
+			freshKnownScanners.append(fs)
+		
+			for i in range(len(unknownScanners)):
+				if unknownScanners[i].scannerId == fs.scannerId:
+					unknownScanners.pop(i)
+					break
+	
+	# At this point, all the scanners are rotated to same orientation
+	# Should be easy to determine position for all beacons now
+	completeList = set()
+	
+	for s in scannerList:
+		absCoords = s.getAbsBeacondCoords()
+		eprint("Abs beacons for scanner {} is {}".format(s.scannerId, absCoords))
+		completeList = completeList.union(absCoords)
+		
+	eprint("Number of unique beacons: {}".format(len(completeList)))
+	#eprint("List: {}".format(completeList))
+	
+	
+	
+	'''
+	
 	for s in scannerList:
 		s.dump()
 		
-	'''cn = scannerList[0].findClosestScanner(scannerList[1:])
-	eprint("Closest scanner is {}".format(cn.scannerId))
-	'''
+	#cn = scannerList[0].findClosestScanner(scannerList[1:])
+	#eprint("Closest scanner is {}".format(cn.scannerId))
+	
 	#otherScanner = scannerList[cn]
 	
 	cn = scannerList[1]
@@ -469,7 +551,7 @@ def main(argv):
 	
 	cn.rotateScanner(bestRot)
 	cn.determineScannerPos(scannerList[0])
-	
+	'''
 	
 	
 if __name__ == "__main__":
