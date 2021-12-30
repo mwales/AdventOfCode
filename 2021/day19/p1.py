@@ -106,6 +106,12 @@ def listMode(l):
 			curMaxCount = c
 			curMaxIdx = i
 	return l[curMaxIdx]
+	
+def manhattanDist(pt1, pt2):
+	retVal = 0
+	for i in range(len(pt1)):
+		retVal += abs(pt1[i] - pt2[i])
+	return retVal
 
 	
 def applyPointRotation1( pt, rotationNumber):
@@ -516,10 +522,17 @@ def main(argv):
 		eprint("Abs beacons for scanner {} is {}".format(s.scannerId, absCoords))
 		completeList = completeList.union(absCoords)
 		
-	eprint("Number of unique beacons: {}".format(len(completeList)))
+	print("pt1: Number of unique beacons: {}".format(len(completeList)))
 	#eprint("List: {}".format(completeList))
 	
+	maxDist = 0
+	for s1 in scannerList:
+		for s2 in scannerList:
+			d = manhattanDist(s1.pos, s2.pos)
+			if d > maxDist:
+				maxDist = d
 	
+	print("pt2: Max Dist between scanners: {}".format(maxDist))
 	
 	'''
 	
