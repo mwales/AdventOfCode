@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
+import time
 
 def eprint(*args, **kwargs):
 	print(*args, file=sys.stderr, **kwargs)
@@ -54,23 +55,34 @@ class RopeTrail:
 
 		tailDist = subPoint(leaderPos, followerPos)
 		eprint(tailDist)
-		
-		if (tailDist[0] <= -2):
-			followerPos = (leaderPos[0] + 1, leaderPos[1])
-			 
-		if (tailDist[0] >= 2):
-			followerPos = (leaderPos[0] - 1, leaderPos[1])
 
-		if (tailDist[1] <= -2):
-			followerPos = (leaderPos[0], leaderPos[1] + 1)
-		if (tailDist[1] >= 2):
-			followerPos = (leaderPos[0], leaderPos[1] - 1)
+		if (tailDist[0] <= -3) or (tailDist[0] >= 3) or (tailDist[1] <= -3) or (tailDist[1] >= 3):
+			eprint("Leader node = {}".format(leaderNode))
+
+			for i in range(len(self.ropePos)):
+				eprint("node {} at {}".format(i, self.ropePos[i]))
+			self.printMap()
+			sys.exit(1)
+		
+		if (abs(tailDist[0]) >= 2) or (abs(tailDist[1]) >= 2):
+			# Move diagnal
+			if tailDist[0] == 0:
+				movX = 0
+			else:
+				movX = tailDist[0] // abs(tailDist[0])
+
+			if tailDist[1] == 0:
+				movY = 0
+			else:
+				movY = tailDist[1] // abs(tailDist[1])
+			followerPos = addPoint(followerPos, (movX, movY))
 
 		self.ropePos[leaderNode + 1] = followerPos
 		
 
 	def propogateAllMoves(self):
 		for line in self.data:
+			#time.sleep(.1)
 			eprint("== {} ==".format(line))
 			lineParts = line.split(" ")
 			for i in range(int(lineParts[1])):
@@ -102,7 +114,7 @@ class RopeTrail:
 				if (curX, curY) == (0,0):
 					curPixel = 's'
 				else:
-					for i in range(len(self.ropePos) - 1, 0, -1):
+					for i in range(len(self.ropePos) - 1, -1, -1):
 						if (curX, curY) == (self.ropePos[i]):
 							curPixel = str(i)
 				curRow += curPixel
@@ -138,6 +150,7 @@ def main(argv):
 	
 	rt.printBreadCrumbs()
 
+	# My wrong answer is 2356
 	print("Length of tail crumbs = {}".format(len(rt.tailCrumbs)))
 
 if __name__ == "__main__":
