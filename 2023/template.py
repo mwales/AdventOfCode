@@ -4,7 +4,7 @@ import sys
 
 def debug(msg):
 	if True:
-		print(msg + "\n")
+		print(msg)
 
 def main(argv):
 	
