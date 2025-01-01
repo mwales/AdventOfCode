@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 
+from __future__ import annotations
+from typing import Any
+
 import sys
 
 def debug(msg):
-	if True:
+	if False:
 		sys.stderr.write(f"{msg}\n")
 
-
-def addPts(pt0: tuple[int, int], pt1: tuple[int, int]) -> tuple[int,int]:
-	retVal = ( pt0[0] + pt1[0], pt0[1] + pt1[1] )
-	return retVal
 
 class Point:
 	def __init__(self, x, y):
@@ -29,13 +28,25 @@ class Point:
 		retVal = self.add(otherInverted)
 		return retVal
 
+	def __eq__(self, other: Any):
+		if isinstance(other, Point):
+			return self.x == other.x and self.y == other.y
+		else:
+			return False
+
+	def __hash__(self):
+		return hash( (self.x, self.y) )
+
+	def __repr__(self):
+		retVal = f"(x={self.x},y={self.y})"
+		return retVal
+
 class Segment:
 	def __init__(self, pt1: Point, pt2: Point):
 		# order the segments to make future work easier
 		if (pt1.x < pt2.x):
 			self.pt1 = pt1
 			self.pt2 = pt2
-
 		elif (pt1.x > pt2.x):
 			self.pt1 = pt2
 			self.pt2 = pt1
@@ -47,9 +58,13 @@ class Segment:
 			elif (pt1.y > pt2.y):
 				self.pt1 = pt2
 				self.pt2 = pt1
+			else:
+				# Points are the same
+				debug(f"Not a segment, points the same: {pt1} and {pt2}")
 
-		# Points are the same
-		debug(f"Not a segment, points the same: {pt1} and {pt2}")
+	def __repr__(self) -> str:
+		retVal = f"[ ({self.pt1.x},{self.pt1.y}) - ({self.pt2.x},{self.pt2.y}) ]"
+		return retVal
 
 	def equal(self, otherSeg) -> bool:
 		if (self.pt1 == otherSeg.pt1) and (self.pt2 == otherSeg.pt2):
@@ -71,8 +86,18 @@ class Segment:
 			return True
 		else:
 			return False
+	
+	def length(self):
+		if self.isHorizontal():
+			return self.pt2.x - self.pt1.x
+		elif self.isVertical():
+			return self.pt2.y - self.pt1.y
+		else:
+			deltaX = self.pt2.x - self.pt1.x
+			deltaY = self.pt2.y - self.pt1.y
+			return pow(deltaX * deltaX + deltaY * deltaY)
 
-	def isNextToOtherSeg(self, otherSeg: Segment) -> Segment:
+	def joinSeg(self, otherSeg: Segment) -> Segment:
 		if (self.isHorizontal() != otherSeg.isHorizontal()):
 			return None
 
@@ -110,9 +135,11 @@ class Segment:
 			elif (otherSeg.pt2.x == self.pt1.x):
 				retVal = Segment(self.pt2, otherSeg.pt1)
 				return retVal
+			else:
+				return None
 
 		# Overlapping
-		print(f"How did we get here?")
+		debug(f"How did we get here join segs? {self} and {otherSeg}")
 		return None
 
 
@@ -124,13 +151,14 @@ class Grid:
 		self.gridData = dict()
 		for y, rowData in enumerate(inputData):
 			for x, cellVal in enumerate(rowData):
-				self.gridData[ (x,y) ] = cellVal
+				curPoint = Point(x,y)
+				self.gridData[ curPoint ] = cellVal
 
-		self.dirList = [ (0,-1), (-1,0), (0,1), (1,0) ]
+		self.dirList = [ Point(0,-1), Point(-1,0), Point(0,1), Point(1,0) ]
 
-	def isInGrid(self, pt: tuple[int,int] ) -> bool:
-		x = pt[0]
-		y = pt[1]
+	def isInGrid(self, pt: Point ) -> bool:
+		x = pt.x
+		y = pt.y
 		if (x < 0) or (x >= self.width):
 			return False
 
@@ -138,7 +166,7 @@ class Grid:
 			return False
 
 		return True
-
+	
 	def getRegionList(self) -> list[str]:
 		retVal = set()
 		for x in range(self.width):
@@ -150,33 +178,16 @@ class Grid:
 		retVal = 0
 		for x in range(self.width):
 			for y in range(self.height):
-				if (self.gridData[ (x,y) ] == region):
+				if (self.gridData[ Point(x,y) ] == region):
 					retVal += 1
 		return retVal
 
-	def getAllPerim(self, region) -> int:
+	def getRegionPerim(self, region: list[ Point ]) -> int:
 		retVal = 0
-		neighbors = [ (-1,0), (0,-1), (1,0), (0,1) ]
-
-		for x in range(self.width):
-			for y in range(self.height):
-				if (self.gridData[ (x,y) ] == region):
-					for curDir in neighbors:
-						nPt = addPts(curDir, (x,y) )
-						if not self.isInGrid(nPt):
-							retVal += 1
-						elif self.gridData[nPt] != region:
-							retVal += 1
-
-		return retVal
-
-	def getRegionPerim(self, region: list[ tuple[int,int]]) -> int:
-		retVal = 0
-		neighbors = [ (-1,0), (0,-1), (1,0), (0,1) ]
 
 		for curPt in region:
-			for direction in neighbors:
-				neighPt = addPts( curPt, direction)
+			for direction in self.dirList:
+				neighPt = curPt.add(direction)
 
 				if neighPt not in region:
 					retVal += 1
@@ -184,12 +195,11 @@ class Grid:
 		return retVal
 
 
-	def floodRegion(self, pt: tuple[int,int]) -> list[ tuple[int,int] ]:
+	def floodRegion(self, pt: Point) -> list[ Point ]:
 		retVal = []
 		visitList = [pt]
 		historyList = []
 		curVal = self.gridData[pt]
-		neighbors = [ (-1,0), (0,-1), (1,0), (0,1) ]
 		while (len(visitList) > 0):
 			curPt = visitList.pop(0)
 			historyList.append(curPt)
@@ -199,8 +209,8 @@ class Grid:
 
 			retVal.append(curPt)
 
-			for direction in neighbors:
-				neighPt = addPts(curPt, direction)
+			for direction in self.dirList:
+				neighPt = curPt.add(direction)
 				if ( (self.isInGrid(neighPt)) and
 				     (neighPt not in historyList) and 
 				     (neighPt not in visitList) ):
@@ -213,122 +223,28 @@ class Grid:
 		fullList = []
 		for x in range(self.width):
 			for y in range(self.height):
-				fullList.append( (x,y) )
+				fullList.append( Point(x,y) )
 
 		while(len(fullList) > 0):
 			curPt = fullList[0]
 
 			curReg = self.floodRegion(curPt)
-			print(f"For region: {curReg}")
+			debug(f"For region: {curReg}")
 			curRegArea = len(curReg)
 			curRegPerim = self.getRegionPerim(curReg)
 			curRegCost = curRegArea * curRegPerim
 			
-			print(f"Random {self.gridData[curPt]} has {curRegArea} x {curRegPerim} = {curRegCost}")
+			debug(f"Random {self.gridData[curPt]} has {curRegArea} x {curRegPerim} = {curRegCost}")
 			retVal += curRegCost
 
 			# Remove all the region points from list
 			for singlePt in curReg:
-				print(f"  Remove {singlePt}")
+				debug(f"  Remove {singlePt}")
 				fullList.remove(singlePt)
 
 		return retVal
-
-	def getTurnRightDir(self, dirIndex) -> tuple[int, int]:
-		dirIndex -= 1
-		if (dirIndex < 0):
-			dirIndex += 4
-		return self.dirList[dirIndex]
-
-	def getCurrentDir(self, dirIndex) -> tuple[int, int]:
-		return self.dirList[dirIndex]
-		
-	def getTurnLeftDir(self, dirIndex) -> tuple[int, int]:
-		dirIndex += 1
-		dirIndex %= 4
-		return self.dirList[dirIndex]
 	
-	def getBackwardsDir(self, dirIndex) -> tuple[int, int]:
-		dirIndex += 2
-		dirIndex %= 4
-		return self.dirList[dirIndex]
-
-
-	def calculateNumWallsWrong(self, region: list[ tuple[int, int]]):
-		debug(f"calculateNumWalls of region {region}")
-
-		# Find one of the low point in the region (and the left-most)
-		startPt = region[0]
-		for curPt in region:
-			if (curPt[1] < startPt[1]):
-				startPt = curPt
-			if ( (curPt[1] == startPt[1]) and (curPt[0] < startPt[0]) ):
-				startPt = curPt
-
-
-
-		# Going to do directions as person dragging their right-hand against wall of maze
-
-		wallVisitList = set()
-		directionChanges = 0
-		# Setting this purposely to wrong direction so we get a direction change right off the bat
-		dirIndex = 1
-		exitSearch = False
-		curPt = startPt
-		while(exitSearch == False):
-			if (curPt in wallVisitList):
-				# We are back to start point
-				exitSearch = True
-				continue
-
-			wallVisitList.add(curPt)
-
-			# Can I turn right?
-			turnRtPt = addPts(curPt, self.getTurnRightDir(dirIndex))
-			if (turnRtPt in region):
-				# We can turn right, so we need to
-				directionChanges += 1
-				dirIndex -= 1
-				if (dirIndex < 0):
-					dirIndex += 4
-				curPt = turnRtPt
-				continue
-
-			# Can I continue in same direction?
-			sameDirPt = addPts(curPt, self.getCurrentDir(dirIndex))
-			if (sameDirPt in region):
-				# We can continue in the same direction
-				curPt = sameDirPt
-				continue
-
-			#No?  How about left
-			turnLeftPt = addPts(curPt, self.getTurnLeftDir(dirIndex))
-			if (turnLeftPt in region):
-				directionChanges += 1
-				dirIndex += 1
-				dirIndex %= 4
-				curPt = turnLeftPt
-				continue
-
-			# How about turn 180
-			deadEndPt = addPts(curPt, self.getBackwardsDir(dirIndex))
-			if (deadEndPt in region):
-				directionChanges += 2
-				dirIndex += 2
-				dirIndex %= 4
-				curPt = deadEndPt
-				continue
-
-			# If we get here, I think this is the special case of a 1 square region?
-			if (len(region) == 1):
-				return 4
-
-			# What the heck, how did we get here, this is all fail
-			return None
-
-		return directionChanges
-
-	def createWallSegments(self, region: list[tuple[int,int]]) -> list[tuple[tuple[int,int], tuple[int,int]]]:
+	def createWallSegments(self, region: list[Point]) -> list[Segment]:
 		# value of region
 		if len(region) <= 0:
 			return []
@@ -338,93 +254,100 @@ class Grid:
 
 		retList = []
 		for curPt in region:
-			curX, curY = curPt
+			curX = curPt.x
+			curY = curPt.y
 			# 4 possible segments we need to generate (top, bottom, left, right)
 			
 			# check top
-			if (curY == 0) or (self.gridData[ (curX, curY-1) ] != elemVal):
+			if (curY == 0) or (self.gridData[ Point(curX, curY-1) ] != elemVal):
 				ptA = curPt
-				ptB = (curX + 1, curY)
-				retList.append( (ptA,ptB) )
+				ptB = Point(curX + 1, curY)
+				retList.append( Segment(ptA,ptB) )
 
 			# check bottom
-			if (curY + 1 >= self.height) or (self.gridData[ (curX, curY+1) ] != elemVal):
-				ptA = (curX, curY + 1)
-				ptB = (curX + 1, curY + 1)
-				retList.append( (ptA,ptB) )
+			if (curY + 1 >= self.height) or (self.gridData[ Point(curX, curY+1) ] != elemVal):
+				ptA = Point(curX, curY + 1)
+				ptB = Point(curX + 1, curY + 1)
+				retList.append( Segment(ptA,ptB) )
 
 			# check left
-			if (curX == 0) or (self.gridData[ (curX-1,curY) ] != elemVal):
-				ptA = (curX, curY)
-				ptB = (curX, curY + 1)
-				retList.append( (ptA,ptB) )
+			if (curX == 0) or (self.gridData[ Point(curX-1,curY) ] != elemVal):
+				ptA = Point(curX, curY)
+				ptB = Point(curX, curY + 1)
+				retList.append( Segment(ptA,ptB) )
 
 			# check right
-			if (curX+1 >= self.width) or (self.gridData[ (curX+1,curY) ] != elemVal):
-				ptA = (curX+1, curY)
-				ptB = (curX+1, curY + 1)
-				retList.append( (ptA,ptB) )
+			if (curX+1 >= self.width) or (self.gridData[ Point(curX+1,curY) ] != elemVal):
+				ptA = Point(curX+1, curY)
+				ptB = Point(curX+1, curY + 1)
+				retList.append( Segment(ptA,ptB) )
 
 
 		debug(f"For region of {elemVal}, we have seg list:")
 		for seg in retList:
-			print(f"  Seg: {seg}")
+			debug(f"  Seg: {seg}")
 		return retList
 
-	def canWeJoinHorizontalSegs(self, seg1: tuple[int,int], seg2: tuple[int,int]) -> tuple[int,int]:
-		# Are the segs horizontal?
-		seg1x, seg1y = seg1
-		seg2x, seg2y = seg2
+	def isSegOnGridBorder(self, s: Segment) -> bool:
+		if (s.isVertical()):
+			if (s.pt1.x == 0):
+				# is it on left edge
+				return True
+			elif (s.pt1.x == self.width):
+				# is it on right edge
+				return True
+			else:
+				# on neither edge
+				return False
+		elif (s.isHorizontal()):
+			if (s.pt1.y == 0):
+				# is on top edge
+				return True
+			elif (s.pt1.y == self.height):
+				return True
+			else:
+				return False
+		else:
+			# borders are only horizontal or vertical
+			return False
 
-		if (seg
+	def isLongerSegValid(self, newSeg: Segment, val : str) -> bool:
+		segLen = newSeg.length()
+		if (newSeg.isVertical()):
+			# is our val on the left or right side?
+			curPt = newSeg.pt1.add(Point(-1,0))
+			deltaPt = Point(0,1)
+			if self.gridData[curPt] == val:
+				# We are going to check the left side of vertical
+				debug(f"isLongerSegValid {newSeg} for {val} checking left side")
+			else:
+				curPt = curPt.add( Point(1,0) )
+				debug(f"isLongerSegValid {newSeg} for {val} checking right side")
 
-
-	def canWeJoinVerticalSegs(self, seg1: tuple[tuple[int,int], seg2: tuple[int,int]) -> tuple[int,int]:
-
-
-	def canWeJoin(self, firstSeg: tuple[int,int], otherSeg: tuple[int,int]) -> tuple[int,int]:
-		# Return None if we can't, else the combined segment
-
-		ptA, ptB = firstSeg
-		ptAx, ptAy = ptA
-		ptBx, ptBy = ptB
-
-		# Is it a horizontal seg?
-		if (ptAy == ptBy):
-			# We always assume this is left seg, try to find seg to it's right
-			for otherSeg in workingList:
-				otherA, otherB = otherSeg
-				otherAx, otherAy = otherA
-				otherBx, otherBy = otherB
-
-				# Matching seg must be horizontal
-				if (otherAy == otherBy) and (otherAy == ptAy) and (ptBx == otherAx):
-					combinedSeg = (ptA, otherB)
-					retList.append(combinedSeg)
-				workingList.remove(otherSeg)
-					segCombined = True
-					break
+		elif (newSeg.isHorizontal()):
+			curPt = newSeg.pt1.add(Point(0,-1))
+			deltaPt = Point(1,0)
+			if (self.gridData[curPt] == val):
+				# We are goiong to check the top side of horizontal
+				debug(f"isLongerSegValid {newSeg} for {val} checking top side")
+			else:
+				curPt = curPt.add(Point(0,1))
+				debug(f"isLongerSegValid {newSeg} for {val} checking bottom side")
 
 		else:
-			# This must be a vertical seg
-			# We always assume this is top seg, try to find seg underneath
-			for otherSeg in workingList:
-				otherA, otherB = otherSeg
-				otherAx, otherAy = otherA
-				otherBx, otherBy = otherB
+			debug(f"Failed validation, not horizontal or vertical {newSeg}")
+			return False
 
-				# Matching seg must be verticall too
-				if (otherAx == otherBx) and (otherAx == ptAx) and (ptBy == otherAy):
-					combinedSeg = (ptA, otherB)
-					retList.append(combinedSeg)
-					workingList.remove(otherSeg)
-					segCombined = True
-					break
+		for i in range(segLen):
+			if self.gridData[curPt] != val:
+				return False
+
+			curPt = curPt.add(deltaPt)
 
 
+		return True
 
-
-	def joinSegs(self, segList: list[tuple[tuple[int,int], tuple[int,int]]] ) -> list[tuple[tuple[int,int], tuple[int,int]]]:
+	def joinSegs(self, segList: list[Segment], val: str ) -> list[Segment]:
 		retList = []
 		workingList = segList[:]
 
@@ -437,68 +360,60 @@ class Grid:
 				retList.append(firstSeg)
 				break
 
-			ptA, ptB = firstSeg
-			ptAx, ptAy = ptA
-			ptBx, ptBy = ptB
+			for otherSeg in workingList:
+				resultSeg = firstSeg.joinSeg(otherSeg)
 
-			# Is it a horizontal seg?
-			if (ptAy == ptBy):
-				# We always assume this is left seg, try to find seg to it's right
-				for otherSeg in workingList:
-					otherA, otherB = otherSeg
-					otherAx, otherAy = otherA
-					otherBx, otherBy = otherB
+				if (resultSeg == None):
+					debug(f"  Not able to join segs: {firstSeg} and {otherSeg}")
+					# These segs aren't close enough to join
+					continue
 
-					# Matching seg must be horizontal
-					if (otherAy == otherBy) and (otherAy == ptAy) and (ptBx == otherAx):
-						combinedSeg = (ptA, otherB)
-						retList.append(combinedSeg)
-						workingList.remove(otherSeg)
-						segCombined = True
-						break
+				debug(f"  Attempt to join segs: {firstSeg} and {otherSeg} into {resultSeg}")
 
-			else:
-				# This must be a vertical seg
-				# We always assume this is top seg, try to find seg underneath
-				for otherSeg in workingList:
-					otherA, otherB = otherSeg
-					otherAx, otherAy = otherA
-					otherBx, otherBy = otherB
+				# The segs are close enough to join, is the resultant seg valid?
+				# Disallow touching corners!
+				if (self.isSegOnGridBorder(resultSeg)):
+					# Segs on the border are valid
+					debug(f"    New seg {resultSeg} is on border, is valid")
+					retList.append(resultSeg)
+					workingList.remove(otherSeg)
+					segCombined = True
+					break
+				elif (self.isLongerSegValid(resultSeg, val)):
+					debug(f"    New seg {resultSeg} passed validation")
+					retList.append(resultSeg)
+					workingList.remove(otherSeg)
+					segCombined = True
+					break
 
-					# Matching seg must be verticall too
-					if (otherAx == otherBx) and (otherAx == ptAx) and (ptBy == otherAy):
-						combinedSeg = (ptA, otherB)
-						retList.append(combinedSeg)
-						workingList.remove(otherSeg)
-						segCombined = True
-						break
+				if (self.isLongerSegValid(resultSeg, val)):
+					retList.append(resultSeg)
+					workingList.remove(otherSeg)
+					segCombined = True
+					break
 
-			# Did we combine the seg?
-			if not segCombined:
+			if (segCombined == False):
 				retList.append(firstSeg)
 
 		return retList
 
 
-
-						
-
-
-	def calculateNumWalls(self, region: list[ tuple[int, int]]):
+	def calculateNumWalls(self, region: list[ Point ]):
 		segList = self.createWallSegments(region)
+		regVal = self.gridData[region[0]]
 
 		oldLen = 0
 		newLen = len(segList)
 		while(oldLen != newLen):
 			oldLen = len(segList)
 			
-			print("Combine some")
-			segList = self.joinSegs(segList)
+			debug("Combine some")
+			segList = self.joinSegs(segList, regVal)
 
 
 			debug(f"after combine, we have seg list:")
 			for seg in segList:
-				print(f"  Seg: {seg}")
+				debug(f"  Seg: {seg}")
 
 			newLen = len(segList)
 
@@ -511,28 +426,27 @@ class Grid:
 		fullList = []
 		for x in range(self.width):
 			for y in range(self.height):
-				fullList.append( (x,y) )
+				fullList.append( Point(x,y) )
 
 		while(len(fullList) > 0):
 			curPt = fullList[0]
 
 			curReg = self.floodRegion(curPt)
-			print(f"For region: {curReg}")
+			debug(f"For region: {curReg}")
 			curRegArea = len(curReg)
 			curRegNumWalls = self.calculateNumWalls(curReg)
 			debug(f" curRegArea x curRegNumWalls = {curRegArea} x {curRegNumWalls}")
 			curRegCost = curRegArea * curRegNumWalls
 			
-			print(f"Random {self.gridData[curPt]} has {curRegArea} x {curRegNumWalls} = {curRegCost}")
+			debug(f"Random {self.gridData[curPt]} has {curRegArea} x {curRegNumWalls} = {curRegCost}")
 			retVal += curRegCost
 
 			# Remove all the region points from list
 			for singlePt in curReg:
-				print(f"  Remove {singlePt}")
+				debug(f"  Remove {singlePt}")
 				fullList.remove(singlePt)
 
 		return retVal
-
 
 
 def main(argv):
