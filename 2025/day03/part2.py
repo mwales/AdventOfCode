@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 
 # This solution is slow as molasses, so while it ran I found better solve
+#
+# /usr/bin/time ./part2.py input.txt
+# 318536.92user 26.01system 88:30:34elapsed 99%CPU (0avgtext+0avgdata 9588maxresident)k      
+# 0inputs+0outputs (0major+1115minor)pagefaults 0swaps
+#
+# And it even got the correct answer!
+
 
 import sys
 
